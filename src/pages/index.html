@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawid Kłos - Portfolio</title>
-    <meta name="description" content="This website is a portfolio of my Front-end skills. It's a final project made during the WTF:Co ten Frontend? course." />
+    <meta
+      name="description"
+      content="This website is a portfolio of my Front-end skills. It's a final project made during the WTF:Co ten Frontend? course."
+    />
     <!-- Title -->
     <meta property="og:title" content="Dawid Kłos - Portfolio" />
     <!-- OPTIONAL description. 2-4 sentences. -->
@@ -19,6 +22,19 @@
 
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="apple-touch-icon"
@@ -145,7 +161,34 @@
     />
   </head>
   <body>
-    
-
+    <header class="header">
+      <div class="header__greeting">
+        <span>Hey there!<span class="hand__animated">👋</span></span>
+      </div>
+      <img
+        class="header__mypicture"
+        src="../assets/img/me.png"
+        title="Dawid Kłos"
+        alt="Photo of website author"
+      />
+      <p class="header__aboutme">
+        My name is Dawid and I'm an aspiring Frontend developer and a Computer
+        Science student.
+        <span class="header__aboutme--special">
+          You might be interested in checking the list of
+          <a href="#">my skills</a>. Don't forget to have a look at
+          <a href="#">my projects.</a> I'm currently looking for the new
+          challenges so if you have one I'll appreciate if you -
+          <a href="">contact me.</a>
+        </span>
+      </p>
+      <a
+        class="header__mailme"
+        href="mailto:klosdawid12@gmail.com"
+        alt="Link that starts writing a mail to me"
+        >klosdawid12@gmail.com</a
+      >
+    </header>
+    <main></main>
   </body>
 </html>

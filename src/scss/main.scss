@@ -1,12 +1,56 @@
 @import "~normalize.css";
-
 @import "_variables";
 
 body {
   background: $white;
-  color: #fff;
+  color: $text;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Nunito', 'sans-serif';
+}
+.hand__animated {
+
+}
+.header {
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+
+  &__greeting {
+    width: 230px;
+    height: 72px;
+    border-radius: 16px;
+    align-self: flex-end;
+    background-color: $blue;
+    font-size: $header200;
+    font-weight: bold;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__greeting::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    right: 620px;
+    background-color: $blue;
+    width: 17px;
+    height: 23px;
+    border-bottom-right-radius: 62px;
+  }
+
+  &__mypicture {}
+
+  &__aboutme {}
+
+  &__aboutme--special {}
+
+  &__mailme {}
 }
