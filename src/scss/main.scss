@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "_variables";
+@import "modules/header.scss";
 
 body {
   background: $white;
@@ -7,50 +8,46 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   font-family: 'Nunito', 'sans-serif';
 }
-.hand__animated {
+.main {
+  width: 100%;
+  background-color: $blue;
+  margin-top: 176px;
+  text-align: center;
+  font-size: $header100;
+  color: $white;
+  margin-bottom: 128px;
 
+  &__skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
 }
-.header {
-  width: 40%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 130px;
-
-  &__greeting {
-    width: 230px;
-    height: 72px;
-    border-radius: 16px;
-    align-self: flex-end;
-    background-color: $blue;
-    font-size: $header200;
-    font-weight: bold;
-    color: $white;
+.skills {
+  margin: 0px 24px;
+  line-height: 24px;
+  &__list {
+    font-size: $list;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+    list-style-image: url(../assets/img/tick.svg);
   }
-
-  &__greeting::before {
-    content: "";
-    position: absolute;
-    top: 200px;
-    right: 620px;
-    background-color: $blue;
-    width: 17px;
-    height: 23px;
-    border-bottom-right-radius: 62px;
+  &__list--special {
+    list-style-image: url(../assets/img/white_tick.svg);
   }
-
-  &__mypicture {}
-
-  &__aboutme {}
-
-  &__aboutme--special {}
-
-  &__mailme {}
+  &__list--dot {
+    list-style-image: none;
+    list-style-type: circle;
+  }
+  &__heading {
+    font-size: $header300;
+    font-weight: bold;
+  }
 }

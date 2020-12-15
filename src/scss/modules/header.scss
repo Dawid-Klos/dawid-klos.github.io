@@ -1,0 +1,87 @@
+.hand__animated {
+
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &__greeting {
+    width: 230px;
+    height: 72px;
+    border-radius: 16px;
+    margin-top: 80px;
+    margin-left: 360px;
+    align-self: center;
+    background-color: $blue;
+    font-size: $header200;
+    font-weight: bold;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__greeting::before {
+    content: url(../assets/img/speech_cloud.svg);
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -130px;
+  }
+  &__mypicture {
+    width: 178px;
+    height: 178px;
+  }
+  &__aboutme {
+    font-size: $header200;
+    font-weight: bold;
+    color: $textdark; 
+    text-align: center;
+    margin-top: 78px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  &__aboutme--special {
+    color: $blue;
+  }
+  &__links {
+    color: $text;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 40px;
+  }
+  &__links::before {
+    content: url(../assets/img/left_bracket.svg);
+    position: absolute;
+    left: 10%;
+    top: 410px;
+  }
+  &__links::after {
+    content: url(../assets/img/right_bracket.svg);
+    position: absolute;
+    right: 10%;
+    top: 410px;
+  }
+  &__links--special {
+    color: $link;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__mailme {
+    width: 278px;
+    height: 48px;
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: $link;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
