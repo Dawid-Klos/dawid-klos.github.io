@@ -8,17 +8,54 @@
         font-size: $text-size;
         width: 772px;
         margin: 0 auto;
+        margin-bottom: 128px;
     }
     &__list {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        
-        margin: 0 128px;
+        margin: 0 110px;
 
     }
 }
 .project {
+    width: 548px;
+    height: 360px;
+    margin: 0px 12px;
     list-style-type: none;
-    width: 30%;
+    background-image: url("../assets/img/console.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // text-align: left;
+    &::before {
+        content: url("../assets/img/gh.svg");
+        margin-top: -126px;
+
+    }
+    &__name--left {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+    }
+    &__content-right {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+    &__name {
+        margin-top: 36px;
+    }
+    &__description {
+
+    }
+    &__demo {
+
+    }
+    &__source {
+
+    }
 }
