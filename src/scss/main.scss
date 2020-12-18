@@ -1,6 +1,8 @@
 @import "~normalize.css";
 @import "_variables";
 @import "modules/header.scss";
+@import "modules/knowledge.scss";
+@import "modules/projects.scss";
 
 body {
   background: $white;
@@ -14,40 +16,6 @@ body {
 }
 .main {
   width: 100%;
-  background-color: $blue;
   margin-top: 176px;
   text-align: center;
-  font-size: $header100;
-  color: $white;
-  margin-bottom: 128px;
-
-  &__skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }
-}
-.skills {
-  margin: 0px 24px;
-  line-height: 24px;
-  &__list {
-    font-size: $list;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    list-style-image: url(../assets/img/tick.svg);
-  }
-  &__list--special {
-    list-style-image: url(../assets/img/white_tick.svg);
-  }
-  &__list--dot {
-    list-style-image: none;
-    list-style-type: circle;
-  }
-  &__heading {
-    font-size: $header300;
-    font-weight: bold;
-  }
 }
