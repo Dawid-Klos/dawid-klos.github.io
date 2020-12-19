@@ -30,32 +30,72 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
-    // text-align: left;
+    font-family: 'Roboto Mono';
+    font-size: $console;
     &::before {
         content: url("../assets/img/gh.svg");
-        margin-top: -126px;
+        margin-top: -80px;
 
     }
-    &__name--left {
+    &--left {
         display: inline-block;
-        width: 100px;
         text-align: right;
+        width: 120px;
+
     }
-    &__content-right {
+    &--right {
         display: inline-block;
-        width: 200px;
         text-align: left;
+        min-width: 60px;
     }
-    &__name {
-        margin-top: 36px;
+    &--link {
+        color: $textlink;
     }
-    &__description {
-
+}
+.name {
+    margin-top: 30px;
+    margin-left: -14px;
+    line-height: 24px;
+    color: $grey4;
+    &__left {
+        color: $grey4;
+        padding: 2px;
     }
-    &__demo {
-
+    &__content {
+        font-weight: bold;
+        color: $white;
+        padding: 2px;
     }
-    &__source {
-
+}
+.description {
+    margin-bottom: 24px;
+    margin-left: -14px;
+    &__left {
+        color: $grey4;
+        padding: 2px;
+    }
+    &__content {
+        color: $grey5;
+        padding: 2px;
+    }
+}
+.demo {
+    margin-left: -14px;
+    &__left {
+        color: $grey4;
+        padding: 2px;
+    }
+    &__content {
+        padding: 2px;
+    }
+}
+.source {
+    margin-left: -14px;
+    &__left {
+        color: $grey4;
+        padding: 2px;
+    }
+    &__content {
+        padding: 2px;
     }
 }
