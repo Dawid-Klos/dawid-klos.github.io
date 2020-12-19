@@ -75,16 +75,22 @@
   }
 
   &__mailme {
-    width: 278px;
-    height: 48px;
-    color: $white;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: $link;
-    border-radius: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
   }
+}
+.link {
+  color: $white;
+  text-decoration: none;
+  width: 278px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: $link;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }

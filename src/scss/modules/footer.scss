@@ -1,0 +1,67 @@
+.footer {
+    width: 100%;
+    background-color: $lightblue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 176px;
+    &__heading {
+        margin-top: 80px;
+        font-size: $header100;
+        color: $textdark;
+    }
+    &__text {
+        font-size: $text-size;
+        color: $text;
+    }
+    &__social-media {
+        margin-top: 128px;
+        width: 580px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+    }
+}
+.social-media {
+    background-color: $white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__github {
+        width: 24px;
+        height: 24px;
+    }
+    &__instagram {
+        width: 24px;
+        height: 24px;
+    }
+    &__facebook {
+        width: 24px;
+        height: 24px;
+    }
+}
+.mailme {
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    background: none;
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        width: 278px;
+        height: 48px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: $link;
+        border-radius: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
