@@ -10,8 +10,8 @@ console.log('HELLO 🚀')
 
 
 const projectsList = document.querySelector('.project--js');
-
-fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=asc")
+const counter = 0;
+fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc")
   .then(resp => resp.json())
   .then(resp => {
    for (let repo of resp) {
@@ -36,7 +36,12 @@ fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=asc"
     </li>
     </ul>
     `;
-     repositoryList.innerHTML += myTemplate;
+    
+    if(counter < 7) {
+      repositoryList.innerHTML += myTemplate;
+      counter++;
+    }
+    
   }
 })
   .catch(error => {

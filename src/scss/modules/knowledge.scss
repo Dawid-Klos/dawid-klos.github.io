@@ -56,3 +56,6 @@
       list-style-type: circle;
     }
   }
+  li::marker {
+    padding: 2px;
+  }
