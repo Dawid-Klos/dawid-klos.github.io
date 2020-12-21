@@ -1,0 +1,202 @@
+@media screen and (max-width: 767px) {
+    .main {
+        margin-top: 96px;
+    }
+
+    .header {
+        padding: 0px 14px;
+        width: 100%;
+
+        &__greeting {
+            display: none;
+        }
+
+        &__mypicture {
+            width: 128px;
+            height: 128px;
+            margin-top: 88px;
+            margin-bottom: -40px;
+        }
+
+        &__aboutme {
+            font-size: $mheader200;
+            line-height: 32px;
+        }
+
+        &__aboutme--special {
+            line-height: 32px;
+        }
+
+        &__links {
+            width: 100%;
+            line-height: 32px;
+            margin-top: 0px;
+        }
+
+        &__links--special {
+            text-decoration: none;
+        }
+
+        &__links::before {
+            display: none;
+        }
+
+        &__links::after {
+            display: none;
+        }
+    }
+
+    .knowledge {
+        width: 348px;
+        padding: 88px 0px;
+
+        &__articles {
+            display: block;
+            margin: 0;
+        }
+
+        &__heading {
+            font-size: $mheader100;
+            margin-bottom: 64px;
+        }
+    }
+
+    .skills {
+        margin: 0px 16px;
+        margin-bottom: 64px;
+        line-height: 24px;
+        background-color: $blue;
+        border-radius: 12px;
+        box-shadow: none;
+
+        &__heading {
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            width: 100%;
+            margin-left: 12px;
+        }
+    }
+
+    .projects {
+        padding: 0px 14px;
+        margin-top: 64px;
+        margin-bottom: 88px;
+        width: 100%;
+
+        &__heading {
+            font-size: $mheader100;
+        }
+
+        &__text {
+            font-size: $mtextsize;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 46px;
+            line-height: 32px;
+        }
+
+        &__list {
+            margin: 0px;
+        }
+    }
+
+    .project {
+        width: 287px;
+        height: 340px;
+        margin-bottom: 24px;
+        background-image: url("../assets/img/m_console.svg");
+        font-size: $mconsole;
+
+        &::before {
+            margin-top: -30px;
+            margin-left: -20px;
+        }
+
+        &--left {
+            width: 100px;
+        }
+
+        &--right {
+            width: 160px;
+        }
+    }
+
+    .name {
+        margin-top: 30px;
+        margin-left: -30px;
+        line-height: 24px;
+        font-size: $mconsole;
+    }
+
+    .description {
+        margin-bottom: 24px;
+        margin-left: -30px;
+        font-size: $mconsole;
+    }
+
+    .demo {
+        margin-left: -30px;
+        font-size: $mconsole;
+    }
+
+    .source {
+        margin-left: -30px;
+        font-size: $mconsole;
+    }
+
+    .footer {
+        padding: 0px 14px;
+        padding-bottom: 176px;
+
+        &__heading {
+            margin-top: 80px;
+        }
+
+        &__text {}
+
+        &__social-media {
+            margin-top: 128px;
+            width: 260px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+        }
+    }
+
+    .footer {
+        width: 100%;
+        padding-bottom: 88px;
+        text-align: center;
+
+        &__heading {
+            margin-top: 80px;
+            font-size: $mheader100;
+        }
+
+        &__text {
+            font-size: $mtextsize;
+            line-height: 32px;
+        }
+
+        &__social-media {
+            margin: 0 21px;
+            margin-top: 56px;
+            width: 70%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+    }
+
+    .social-media {
+        margin: 0px -20px;
+        margin-bottom: 64px;
+    }
+
+    .mailme {
+        margin-left: 0px;
+    }
+}

@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Nunito', 'sans-serif';
-  font-size: $text-size;
+  font-size: $textsize;
   color: $text;
 }
 .main {
@@ -23,3 +23,5 @@ body {
   margin-top: 176px;
   text-align: center;
 }
+
+@import "modules/media.scss";

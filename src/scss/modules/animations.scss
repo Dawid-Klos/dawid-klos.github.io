@@ -1,19 +1,8 @@
 @keyframes rotate {
     0% {
-        transform: rotate(-10deg);
+        transform: rotate(10deg);
     }
     100% {
-        transform: rotate(50deg);
-    }
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
+        transform: rotate(70deg);
     }
 }
