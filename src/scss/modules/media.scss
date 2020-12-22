@@ -4,8 +4,8 @@
     }
 
     .header {
-        padding: 0px 14px;
-        width: 100%;
+        padding: 0px 12px;
+        width: calc(100% - 24px);
 
         &__greeting {
             display: none;
@@ -28,7 +28,7 @@
         }
 
         &__links {
-            width: 100%;
+            width: 90%;
             line-height: 32px;
             margin-top: 0px;
         }
@@ -47,8 +47,8 @@
     }
 
     .knowledge {
-        width: 348px;
-        padding: 88px 0px;
+        width: calc(100% - 24px);
+        padding: 88px 12px;
 
         &__articles {
             display: block;
@@ -62,7 +62,7 @@
     }
 
     .skills {
-        margin: 0px 16px;
+        margin: 0px 0px;
         margin-bottom: 64px;
         line-height: 24px;
         background-color: $blue;
@@ -80,10 +80,10 @@
     }
 
     .projects {
-        padding: 0px 14px;
+        padding: 0px 12px;
         margin-top: 64px;
         margin-bottom: 88px;
-        width: 100%;
+        width: calc(100% - 24px);
 
         &__heading {
             font-size: $mheader100;
@@ -145,30 +145,9 @@
         margin-left: -30px;
         font-size: $mconsole;
     }
-
     .footer {
-        padding: 0px 14px;
-        padding-bottom: 176px;
-
-        &__heading {
-            margin-top: 80px;
-        }
-
-        &__text {}
-
-        &__social-media {
-            margin-top: 128px;
-            width: 260px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-        }
-    }
-
-    .footer {
-        width: 100%;
-        padding-bottom: 88px;
+        width: calc(100% - 24px);
+        padding: 88px 12px;
         text-align: center;
 
         &__heading {
