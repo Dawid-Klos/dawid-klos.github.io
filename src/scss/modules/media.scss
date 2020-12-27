@@ -1,3 +1,73 @@
+//Tablets 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.main {
+    margin-top: 96px;
+}
+.header {
+    padding: 0px 12px;
+    width: calc(100% - 24px);
+    &__aboutme {
+        width: 100%;
+    }
+    &__gretting {
+        display: none;
+    }
+    &__links {
+        width: 90%;
+        line-height: 32px;
+        margin-top: 0px;
+    }
+    &__links--special {
+        text-decoration: none;
+    }
+
+    &__links::before {
+        display: none;
+    }
+
+    &__links::after {
+        display: none;
+    }
+}
+.knowledge {
+    width: calc(100% - 24px);
+    padding: 88px 12px;
+
+    &__articles {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: $mheader100;
+        margin-bottom: 64px;
+    }
+}
+.skills {
+    margin: 0px auto;
+    margin-bottom: 92px;
+    line-height: 24px;
+    background-color: $blue;
+    border-radius: 12px;
+    width: 45%;
+    height: 460px;
+    background-color: rgba(246, 249, 253, .05);
+    &__heading {
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        width: 100%;
+        margin-left: 32px;
+    }
+}
+.footer {
+    width: calc(100% - 24px);
+    padding: 88px 12px;
+    text-align: center;
+}
+
+}
 // Low resolution tablets
 @media screen and (max-width: 767px) {
     .main {
@@ -78,7 +148,7 @@
 
         &__list {
             width: 100%;
-            margin-left: 12px;
+            margin-left: 32px;
         }
     }
 
@@ -216,6 +286,9 @@
     }
     .skills {
         width: 70%;
+        &__list {
+            margin-left: 12px;
+        }
     }
     .footer {
 
