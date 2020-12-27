@@ -1,5 +1,5 @@
 // Low resolution tablets
-@media screen and (min-width:481px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .main {
         margin-top: 96px;
     }
@@ -22,6 +22,7 @@
         &__aboutme {
             font-size: $mheader200;
             line-height: 32px;
+            width: 100%;
         }
 
         &__aboutme--special {
@@ -63,13 +64,14 @@
     }
 
     .skills {
-        margin: 0px 0px;
+        margin: 0px auto;
         margin-bottom: 64px;
         line-height: 24px;
         background-color: $blue;
         border-radius: 12px;
-        box-shadow: none;
-
+        width: 60%;
+        height: 460px;
+        background-color: rgba(246, 249, 253, .05);
         &__heading {
             margin-bottom: 24px;
         }
@@ -105,13 +107,13 @@
 
     .project {
         width: 287px;
-        height: 340px;
+        height: 400px;
         margin-bottom: 24px;
         background-image: url("../assets/img/m_console.svg");
         font-size: $mconsole;
 
         &::before {
-            margin-top: -30px;
+            margin-top: -110px;
             margin-left: -20px;
         }
 
@@ -163,8 +165,7 @@
 
         &__social-media {
             margin: 0 21px;
-            margin-top: 56px;
-            width: 70%;
+            width: 65%;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
@@ -172,8 +173,7 @@
     }
 
     .social-media {
-        margin: 0px -20px;
-        margin-bottom: 64px;
+        margin: 64px 20px;
     }
 
     .mailme {
@@ -184,41 +184,17 @@
 
 // Mobiles
 @media screen and (max-width: 480px) {
-    .main {
-        margin-top: 96px;
-    }
-
     .header {
-        padding: 0px 12px;
-        width: calc(100% - 24px);
-
-        &__greeting {
-            display: none;
-        }
-
-        &__mypicture {
-            width: 128px;
-            height: 128px;
-            margin-top: 88px;
-            margin-bottom: -40px;
-        }
 
         &__aboutme {
-            width: 100%;
-            font-size: $mheader200;
-            line-height: 32px;
             text-align: center;
         }
 
-        &__aboutme--special {
-            line-height: 32px;
-
-
-        }
         &__aboutme--special::after {
             content: "\00000a ";
             white-space: pre;
         }
+
         &__aboutme--special::before {
             content: none;
             white-space: nowrap;
@@ -229,183 +205,83 @@
             line-height: 32px;
             margin-top: 0px;
         }
-
-        &__links--special {
-            text-decoration: none;
-        }
-
-        &__links::before {
-            display: none;
-        }
-
-        &__links::after {
-            display: none;
-        }
-    }
-
-    .knowledge {
-        width: calc(100% - 24px);
-        padding: 88px 12px;
-
-        &__articles {
-            display: block;
-            margin: 0;
-        }
-
-        &__heading {
-            font-size: $mheader100;
-            margin-bottom: 64px;
-        }
-    }
-
-    .skills {
-        margin: 0px 0px;
-        margin-bottom: 64px;
-        line-height: 24px;
-        background-color: $blue;
-        border-radius: 12px;
-        box-shadow: none;
-
-        &__heading {
-            margin-bottom: 24px;
-        }
-
-        &__list {
-            width: 100%;
-            margin-left: 12px;
-        }
-    }
-
-    .projects {
-        padding: 0px 12px;
-        margin-top: 64px;
-        margin-bottom: 88px;
-        width: calc(100% - 24px);
-
-        &__heading {
-            font-size: $mheader100;
-        }
-
-        &__text {
-            font-size: $mtextsize;
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 46px;
-            line-height: 32px;
-        }
-
-        &__list {
-            margin: 0px;
-        }
     }
 
     .project {
-        width: 287px;
-        height: 340px;
-        margin-bottom: 24px;
-        background-image: url("../assets/img/m_console.svg");
-        font-size: $mconsole;
-
+        height: 380px;
         &::before {
-            margin-top: -30px;
+            margin-top: -90px;
             margin-left: -20px;
         }
-
-        &--left {
-            width: 100px;
-        }
-
-        &--right {
-            width: 160px;
-        }
     }
-
-    .name {
-        margin-top: 30px;
-        margin-left: -30px;
-        line-height: 24px;
-        font-size: $mconsole;
-    }
-
-    .description {
-        margin-bottom: 24px;
-        margin-left: -30px;
-        font-size: $mconsole;
-    }
-
-    .demo {
-        margin-left: -30px;
-        font-size: $mconsole;
-    }
-
-    .source {
-        margin-left: -30px;
-        font-size: $mconsole;
+    .skills {
+        width: 70%;
     }
     .footer {
-        width: calc(100% - 24px);
-        padding: 88px 12px;
-        text-align: center;
-
-        &__heading {
-            margin-top: 80px;
-            font-size: $mheader100;
-        }
-
-        &__text {
-            font-size: $mtextsize;
-            line-height: 32px;
-        }
 
         &__social-media {
             margin: 0 21px;
-            margin-top: 56px;
-            width: 70%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
+            width: 65%;
         }
     }
-
     .social-media {
-        margin: 0px -20px;
-        margin-bottom: 64px;
-    }
-
-    .mailme {
-        margin-left: 0px;
+        margin: 64px 8px;
     }
 }
 
-
-
-
-
-
 @media screen and (max-width: 370px) {
-    .header {   
+    .header {
 
-    &__aboutme {
-            width: 100%;
-            font-size: $mheader200;
-            line-height: 32px;
+        &__aboutme {
             text-align: center;
-        }
-
-        &__aboutme--special {
-            line-height: 32px;
         }
         &__aboutme--break::after {
             content: "\00000a ";
             white-space: pre;
         }
+
         &__aboutme--special::after {
             content: none;
             white-space: nowrap;
         }
+
         &__aboutme--special::before {
             content: "\00000a ";
             white-space: pre;
         }
-}
-}
+    }
+    .project {
+        width: 288px;
+        height: 360px;
+        &::before {
+            margin-top: -80px;
+            margin-left: -16px;
+        }
+
+        &--left {
+            width: 82px;
+            margin-left: 10px;
+        }
+
+        &--right {
+            width: 170px;
+        }
+    }
+    .name {
+        margin-top: 20px;
+        margin-left: -46px;
+    }
+
+    .description {
+        margin-bottom: 24px;
+        margin-left: -46px;
+    }
+
+    .demo {
+        margin-left: -46px;
+    }
+
+    .source {
+        margin-left: -46px;
+    }
+    }
