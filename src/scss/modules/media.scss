@@ -1,3 +1,53 @@
+//Laptops - small
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+.header {
+    &__aboutme {
+        width: 70%;
+    }
+    &__links {
+        width: 70%;
+    }
+    &__links::before {
+        left: 6%;
+        top: 400px;
+    
+      }
+      &__links::after {
+        right: 6%;
+        top: 400px;
+      }
+}
+.knowledge {
+    width: 100%;
+    color: $white;
+    background-color: $blue;
+    padding: 80px 0 180px 0;
+  
+    &__articles {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 64px;
+    }
+}
+.skills {
+    margin: 0 2%;
+    height: 460px;
+}
+.projects {
+
+    &__list {
+        margin: 0 24px;
+    }
+}
+.project {
+    width: 468px;
+    height: 360px;
+}
+
+}
+
 //Tablets 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 .main {
@@ -39,7 +89,6 @@
     }
 
     &__heading {
-        font-size: $mheader100;
         margin-bottom: 64px;
     }
 }
