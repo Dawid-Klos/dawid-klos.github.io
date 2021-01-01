@@ -11,7 +11,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 360px;
   &__greeting {
     width: 230px;
     height: 72px;
@@ -69,15 +69,15 @@
   &__links::before {
     content: url(../assets/img/left_bracket.svg);
     position: absolute;
-    left: 14%;
-    top: 400px;
+    left: 12%;
+    top: 480px;
 
   }
   &__links::after {
     content: url(../assets/img/right_bracket.svg);
     position: absolute;
-    right: 14%;
-    top: 400px;
+    right: 12%;
+    top: 480px;
   }
   &__links--special {
     color: $link;
@@ -89,20 +89,19 @@
     border: none;
     outline: none;
     background: none;
+    text-decoration: none;
     margin-top: 24px;
+    background-color: $link;
+    color: $white;
+    width: 278px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 2px $grey5;
+    cursor: pointer;
   }
-}
-.link {
-  color: $white;
-  text-decoration: none;
-  width: 278px;
-  height: 48px;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: $link;
-  border-radius: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 2px $grey5;
 }

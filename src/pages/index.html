@@ -161,7 +161,8 @@
     />
   </head>
   <body>
-    <header class="header">
+    <main class="main">    
+    <section class="header">
       <div class="header__greeting">
         <span>Hey there!<span class="hand__animated">👋</span></span>
       </div>
@@ -185,20 +186,18 @@
         hesitate to -
         <a class="header__links--special" href="#contact">contact me</a> 😊.
       </p>
-      <button class="header__mailme" type="button">
-        <a
-          class="link"
+      <a 
+          class="header__mailme"
           href="mailto:klosdawid12@gmail.com"
-          alt="Link that starts writing a mail to me"
-          >klosdawid12@gmail.com</a
-        >
-      </button>
-    </header>
-    <main class="main">
+          title="Link that starts writing a mail to me"
+          >klosdawid12@gmail.com
+    </a>
+    </section>
+    
       <section class="knowledge" id="skills">
         <h2 class="knowledge__heading">My skills</h2>
         <div class="knowledge__articles">
-          <article class="skills">
+          <section class="skills">
             <span class="skills__emoji">💪</span>
             <h3 class="skills__heading">Working knowledge</h3>
             <ul class="skills__list">
@@ -211,9 +210,9 @@
               <li>JS: DOM Manipulations</li>
               <li>SASS</li>
             </ul>
-          </article>
+          </section>
 
-          <article class="skills">
+          <section class="skills">
             <span class="skills__emoji">🤔</span>
             <h3 class="skills__heading">Know something about</h3>
             <ul class="skills__list skills__list--whitetick">
@@ -223,9 +222,9 @@
               <li>Progressive web apps</li>
               <li>GIT</li>
             </ul>
-          </article>
+          </section>
 
-          <article class="skills">
+          <section class="skills">
             <span class="skills__emoji">🎓</span>
             <h3 class="skills__heading">Want to learn</h3>
             <ul class="skills__list skills__list--dot">
@@ -234,7 +233,7 @@
               <li>Server side rendering</li>
               <li>Gatsby</li>
             </ul>
-          </article>
+          </section>
         </div>
       </section>
       <section class="projects" id="projects">
@@ -289,7 +288,7 @@
         <button class="mailme" type="button">
           <a
             class="mailme__link"
-            href="mailto:klosdawid12@gmail.com?subject=I've got something for you"
+            href="mailto:klosdawid12@gmail.com?subject=Offer"
             alt="Link that starts writing a mail to me"
             >klosdawid12@gmail.com</a
           >
