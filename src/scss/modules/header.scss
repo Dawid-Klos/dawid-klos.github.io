@@ -90,18 +90,32 @@
     outline: none;
     background: none;
     text-decoration: none;
-    margin-top: 24px;
     background-color: $link;
     color: $white;
+    border-radius: 64px;
+    margin-top: 24px;
     width: 278px;
     height: 48px;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 2px $grey5;
     cursor: pointer;
+  }
+  &__animated-mail {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    content: '';
+    background-image: url(../assets/img/letter.gif);
+    background-size: 100%;
+    z-index: -1;
+    animation-name: slideUp;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+
   }
 }

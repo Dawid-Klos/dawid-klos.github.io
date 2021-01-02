@@ -36,13 +36,37 @@
         width: 24px;
         height: 24px;
     }
+    &__github:hover {
+        width: 36px;
+        height: 36px;
+    }
+    &__gh-img:hover {
+        width: 36px;
+        height: 36px;
+    }
     &__instagram {
         width: 24px;
         height: 24px;
     }
+    &__instagram:hover {
+        width: 36px;
+        height: 36px;
+    }
+    &__ig-img:hover {
+        width: 36px;
+        height: 36px;
+    }
     &__facebook {
         width: 24px;
         height: 24px;
+    }
+    &__facebook:hover {
+        width: 32px;
+        height: 32px;
+    }
+    &__fb-img:hover {
+        width: 32px;
+        height: 32px;
     }
 }
 .mailme {
@@ -50,18 +74,34 @@
     border: none;
     outline: none;
     background: none;
-    &__link {
-        color: $white;
-        text-decoration: none;
-        width: 278px;
-        height: 48px;
-        font-weight: bold;
-        font-size: 20px;
-        background-color: $link;
-        border-radius: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 2px 2px $grey5;
-    }
+    text-decoration: none;
+    background-color: $link;
+    color: $white;
+    width: 278px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 2px $grey5;
+    cursor: pointer;
+    z-index: 5;
+}
+.animated-mail {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 420px;
+    content: '';
+    background-image: url(../assets/img/letter.gif);
+    background-size: 100%;
+    z-index: 2;
+    animation-name: slideUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.253);
 }

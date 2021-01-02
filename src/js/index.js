@@ -44,3 +44,27 @@ fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc
   .catch(error => {
   console.log('error');
 })
+
+const mail = document.querySelector('.mail--js');
+const mailButton = document.querySelector('.mail-button--js');
+const mail2 = document.querySelector('.mail2--js');
+const mailButton2 = document.querySelector('.mail-button2--js');
+
+mailButton.addEventListener('click', (e) => {
+  mail.style.display = 'inline-block';
+
+  setTimeout(function() {
+    mail.style.display = 'none';
+  }, 1000)
+
+});
+
+mailButton2.addEventListener('click', (e) => {
+  console.log("That's right bro");
+  mail2.style.display = 'inline-block';
+
+  setTimeout(function() {
+    mail2.style.display = 'none';
+  }, 800)
+
+});
