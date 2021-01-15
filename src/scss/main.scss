@@ -25,5 +25,39 @@ body {
   width: 100%;
   text-align: center;
 }
-
+.loader {
+  display: flex;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  background-color: $blue;
+  animation: loader 4s linear;
+  &__mypicture {
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    border: 24px solid $lightblue;
+    margin: 12px;
+    margin-top: -280px;
+    animation: shine-and-hide 4s linear;
+  }
+  &__header {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    animation: shine-and-hide 4s linear;
+  }
+  &__text {
+    color: white;
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 300;
+    animation: shine-and-hide 4s linear;
+  }
+}
 @import "modules/media.scss";

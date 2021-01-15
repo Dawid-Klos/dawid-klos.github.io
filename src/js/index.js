@@ -19,8 +19,7 @@ AOS.init();
 
 // Downloading projects from Github
 const projectsList = document.querySelector('.project--js');
-const counter = 1;
-
+let counter = 1;
 fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc")
   .then(resp => resp.json())
   .then(resp => {
@@ -28,7 +27,7 @@ fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc
     const {name, description, html_url, homepage} = repo;
     const repositoryList = document.querySelector('.project--js');
     const myTemplateLeft = `
-    <ul class="project" data-aos="slide-left">
+    <ul class="project" data-aos="flip-down" data-aos-delay="100">
     <li class="name">
     <span class="name__left project--left">project</span>:<span class="name__content project--right"><strong>${name}</strong></span>
      </li>
@@ -47,7 +46,7 @@ fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc
     </ul>
     `;
     const myTemplateRight = `
-    <ul class="project" data-aos="slide-right">
+    <ul class="project" data-aos="flip-up" data-aos-delay="100">
     <li class="name">
     <span class="name__left project--left">project</span>:<span class="name__content project--right"><strong>${name}</strong></span>
      </li>
@@ -65,12 +64,12 @@ fetch("https://api.github.com/users/Dawid-Klos/repos?sort=created&direction=desc
     </li>
     </ul>
     `;
-    if ((counter % 2) == 0) {
+    if ((counter % 2) === 0) {
       repositoryList.innerHTML += myTemplateLeft;
     } else {
       repositoryList.innerHTML += myTemplateRight;
     }
-    counter++;
+    counter += 1;
   }
 })
   .catch(error => {
