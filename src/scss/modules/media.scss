@@ -57,8 +57,10 @@
 
 //Tablets 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .main {
-        margin-top: 64px;
+    .loader {
+        &__mypicture {
+            margin-top: -380px;
+        }
     }
     .header {
         padding: 0px 12px;
@@ -135,6 +137,11 @@
 
 // Low resolution tablets
 @media screen and (max-width: 767px) {
+    .loader {
+        &__mypicture {
+            margin-top: -270px;
+        }
+    }
     .header {
         padding: 0px 12px;
         width: calc(100% - 24px);
@@ -317,6 +324,11 @@
 
 // Mobiles
 @media screen and (max-width: 480px) {
+    .loader {
+        &__mypicture {
+            margin-top: -300px;
+        }
+    }
     .header {
 
         &__aboutme {
@@ -374,8 +386,13 @@
 }
 
 @media screen and (max-width: 370px) {
+    .loader {
+        &__mypicture {
+            margin-top: -240px;
+        }
+    }
     .header {
-
+        margin-top: 64px;
         &__aboutme {
             text-align: center;
         }

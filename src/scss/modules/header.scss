@@ -7,12 +7,11 @@
 }
 .header {
   width: 100%;
-  margin-top: 60px;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 360px;
   &__greeting {
     width: 230px;
     height: 72px;
@@ -39,7 +38,7 @@
     width: 178px;
     height: 178px;
     border-radius: 50%;
-    border: 24px solid $lightestblue; 
+    border: 24px solid $lightblue; 
     margin-top: -16px;
   }
   &__aboutme {
