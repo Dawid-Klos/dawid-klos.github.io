@@ -37,7 +37,6 @@
     &::before {
         content: url("../assets/img/gh_white.svg");
         margin-top: -80px;
-
     }
     &--left {
         display: inline-block;
@@ -77,6 +76,7 @@
         padding: 2px;
     }
     &__content {
+        width: 320px;
         color: $grey5;
         padding: 2px;
     }
